@@ -244,6 +244,7 @@ case ART_DEFI:
 case ART_INDEF:
 case AUX_PAS:
 case AUX_PRESEN:
+case WEATH:
 case NUMERO://aqui se guardan las variables y los numeros
     if((lexer.lexeme != " ") && (lexer.lexeme != "\n")){
         Resultados+="Token:"+token+" Lexema: "+lexer.lexeme+"\n";

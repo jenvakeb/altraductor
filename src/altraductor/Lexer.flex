@@ -101,6 +101,7 @@ CONJ_CONJSUBOCOMPARAT="AS".*."AS"|"NOT AS".*."AS"|"AS IF"|"AS THOUGH"|"THAN"
 SUJETO = "I"|"YOU"|"HE"|"SHE"|"WE"|"THEY"
 AUX_PRESENT = "AM"|"IS"|"ARE"
 AUX_PAST = "WAS"|"WERE"
+WEATHER = "DRY"|"FLOOD"|"FOG"|"FREEZE"|"HOT"|"RAINY"|"SNOWY"
 
 WHITE=[ \t\r\n]
 %{
@@ -147,4 +148,5 @@ WHITE=[ \t\r\n]
 {CONJ_CONJSUBOCOMPARAT} {lexeme=yytext(); return CONJ_CONJSUBOCOMPARA;}
 {AUX_PRESENT} {lexeme=yytext(); return AUX_PRESEN;}
 {AUX_PAST} {lexeme=yytext(); return AUX_PAS;}
+{WEATHER} {lexeme=yytext(); return WEATH;}
 . {return ERROR}
