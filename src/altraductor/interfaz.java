@@ -212,6 +212,8 @@ case ERROR://aqui se guardan los errores de lo que no coincide
 Resultados+=Resultados+"Error, el simbolo no coincide \n";
 a.setText(Resultados);
 break;
+case ANIMALS:
+case PAIS:
 case CONJ_CONJSUBOCOMPARA:
 case CONJ_CONJSUBOCONCES:
 case CONJ_CONJSUBOCONSEC:
@@ -246,6 +248,11 @@ case AUX_PAS:
 case AUX_PRESEN:
 case WEATH:
 case PROF:
+case ADV_TIME:
+case ADV_FRECUENCIA:
+case ADV_LUG:
+case ADV_MANERA:
+case VEGET:
 case NUMERO://aqui se guardan las variables y los numeros
     if((lexer.lexeme != " ") && (lexer.lexeme != "\n")){
         Resultados+="Token:"+token+" Lexema: "+lexer.lexeme+"\n";

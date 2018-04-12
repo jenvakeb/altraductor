@@ -17,8 +17,10 @@ public class ALTraductor {
      * @param args the command line arguments
      */
     
+    /*"C:/Users/ShellPhish/Documents/PROJECTS/altraductor/src/altraductor/Lexer.flex";*/
     public static void main(String[] args) {
-        String path = "C:/Users/ShellPhish/Documents/PROJECTS/altraductor/src/altraductor/Lexer.flex"; //"C:/Users/betio_000/Documents/NetBeansProjects/ALTraductor/src/altraductor/Lexer.flex";
+        String path = "C:/Users/betio_000/Documents/NetBeansProjects/ALTraductor/src/altraductor/Lexer.flex";
+        
         generarLexer(path);
     }
     
